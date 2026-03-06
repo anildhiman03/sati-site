@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact NexaLink Telecom — reach out for new connections, support, quotes, or general inquiries. Our team is available 24/7 to help you.">
+    <meta name="keywords" content="contact NexaLink, telecom support, internet help, get a quote, customer service">
+    <title>Contact Us — NexaLink Telecom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📡</text></svg>">
+</head>
+
+<body>
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="nav-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">📡</div>
+                <span>NexaLink</span>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html" class="active">Contact</a>
+                <div class="nav-cta">
+                    <a href="contact.html" class="btn btn-primary btn-sm">Get Connected</a>
+                </div>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Contact Us</span>
+            </div>
+            <h1>Get in <span class="gradient-text">Touch</span></h1>
+            <p>Have questions, need support, or want a custom quote? We're here to help 24/7. Reach out and our team
+                will respond promptly.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section style="padding: var(--section-padding);">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Contact Info -->
+                <div class="contact-info reveal">
+                    <p class="section-label">Contact Information</p>
+                    <h2>Let's Start a <span class="gradient-text">Conversation</span></h2>
+                    <p>Whether you're looking for a new internet connection, need technical support, want to upgrade
+                        your plan, or have any other inquiry — our team of experts is ready to assist you.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="detail-icon">📍</div>
+                            <div>
+                                <h4>Our Headquarters</h4>
+                                <p>1200 Tech Park Drive, Suite 400<br>San Francisco, CA 94107, USA</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="detail-icon">📞</div>
+                            <div>
+                                <h4>Phone Numbers</h4>
+                                <p>Toll-Free: 1-800-123-4567<br>Sales: 1-800-123-4568<br>Support: 1-800-123-4569</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="detail-icon">✉️</div>
+                            <div>
+                                <h4>Email Addresses</h4>
+                                <p>General: info@nexalink.com<br>Support: support@nexalink.com<br>Sales:
+                                    sales@nexalink.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="detail-icon">🕐</div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Technical Support: 24/7/365<br>Sales Office: Mon-Fri 8AM–8PM<br>Sat-Sun: 9AM–5PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 style="margin-bottom: 16px;">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📸</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-link" aria-label="YouTube">🎬</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-card reveal">
+                    <div id="formWrapper">
+                        <h3 style="margin-bottom: 8px;">Send Us a Message</h3>
+                        <p style="margin-bottom: 32px; font-size: 0.9rem; color: var(--text-muted);">Fill out the form
+                            below and our team will get back to you within 2 business hours.</p>
+
+                        <form id="contactForm" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name <span class="required">*</span></label>
+                                    <input type="text" id="firstName" name="firstName" class="form-input"
+                                        placeholder="Enter your first name" autocomplete="given-name">
+                                    <div class="error-message" id="firstNameError"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name <span class="required">*</span></label>
+                                    <input type="text" id="lastName" name="lastName" class="form-input"
+                                        placeholder="Enter your last name" autocomplete="family-name">
+                                    <div class="error-message" id="lastNameError"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" class="form-input"
+                                        placeholder="you@example.com" autocomplete="email">
+                                    <div class="error-message" id="emailError"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number <span class="required">*</span></label>
+                                    <input type="tel" id="phone" name="phone" class="form-input"
+                                        placeholder="+1 (555) 000-0000" autocomplete="tel">
+                                    <div class="error-message" id="phoneError"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service">Service Interest <span class="required">*</span></label>
+                                <select id="service" name="service" class="form-input">
+                                    <option value="">— Select a service —</option>
+                                    <option value="internet-provider">Internet Service Provider</option>
+                                    <option value="new-connection">New Connection Setup</option>
+                                    <option value="upgrade-connection">Upgrade Existing Connection</option>
+                                    <option value="connection-relocation">Connection Relocation</option>
+                                    <option value="service-repair">Internet Service Repair</option>
+                                    <option value="mobile-sim">Mobile SIM / Data Plans</option>
+                                    <option value="enterprise">Enterprise / Custom Solutions</option>
+                                    <option value="other">Other / General Inquiry</option>
+                                </select>
+                                <div class="error-message" id="serviceError"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Your Message <span class="required">*</span></label>
+                                <textarea id="message" name="message" class="form-input"
+                                    placeholder="Tell us about your requirements, questions, or how we can help you..."></textarea>
+                                <div class="error-message" id="messageError"></div>
+                            </div>
+
+                            <div class="form-submit">
+                                <button type="submit" class="btn btn-primary" id="submitBtn">
+                                    Send Message <span>→</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Success Message -->
+                    <div class="form-success" id="formSuccess">
+                        <div class="success-icon">✓</div>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for reaching out to NexaLink Telecom. Our team will review your inquiry and get
+                            back to you within 2 business hours.</p>
+                        <button class="btn btn-secondary" style="margin-top: 24px;" onclick="resetForm()">Send Another
+                            Message</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section style="padding: 0 0 80px;">
+        <div class="container">
+            <div class="section-header reveal" style="margin-bottom: 30px;">
+                <p class="section-label">Find Us</p>
+                <h2 class="section-title">Our <span class="gradient-text">Location</span></h2>
+            </div>
+            <div class="map-section reveal">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.4012!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1234567890"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="NexaLink Telecom Headquarters Location">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Contact Info -->
+    <section style="background: var(--bg-secondary); padding: var(--section-padding);">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">Quick Help</p>
+                <h2 class="section-title">Other Ways to <span class="gradient-text">Reach Us</span></h2>
+            </div>
+            <p class="section-subtitle reveal">Choose the communication channel that works best for you.</p>
+
+            <div class="features-grid">
+                <div class="feature-card reveal reveal-delay-1">
+                    <div class="feature-icon">💬</div>
+                    <h4>Live Chat</h4>
+                    <p>Chat with our support agents in real-time. Available 24/7 on our website and mobile app.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-2">
+                    <div class="feature-icon">📧</div>
+                    <h4>Email Support</h4>
+                    <p>Send us a detailed email and expect a response within 2 hours during business hours.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-3">
+                    <div class="feature-icon">📞</div>
+                    <h4>Call Us</h4>
+                    <p>Speak directly with our support team at 1-800-123-4567. No hold music, we promise.</p>
+                </div>
+                <div class="feature-card reveal reveal-delay-4">
+                    <div class="feature-icon">🏢</div>
+                    <h4>Visit Our Office</h4>
+                    <p>Walk into our San Francisco headquarters. Mon-Fri 9AM–6PM. No appointment needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card reveal">
+                <h2>Still Have <span class="gradient-text">Questions?</span></h2>
+                <p>Check out our comprehensive FAQ section on the services page, or give us a call anytime. We're always
+                    happy to help!</p>
+                <div class="cta-buttons">
+                    <a href="services.html#faq" class="btn btn-primary">View FAQ <span>→</span></a>
+                    <a href="tel:+18001234567" class="btn btn-secondary">📞 1-800-123-4567</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <div class="logo-icon">📡</div>
+                        <span>NexaLink</span>
+                    </a>
+                    <p>Your trusted partner for high-speed internet and mobile connectivity solutions. Serving
+                        communities nationwide since 2010.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📸</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#internet-provider">Internet Provider</a></li>
+                        <li><a href="services.html#new-connection">New Connection</a></li>
+                        <li><a href="services.html#upgrade-connection">Upgrade Connection</a></li>
+                        <li><a href="services.html#connection-relocation">Connection Relocation</a></li>
+                        <li><a href="services.html#service-repair">Service Repair</a></li>
+                        <li><a href="services.html#mobile-sim">Mobile SIM</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📍 1200 Tech Park Drive, Suite 400, San Francisco, CA 94107</li>
+                        <li>📞 1-800-123-4567</li>
+                        <li>✉️ support@nexalink.com</li>
+                        <li>🕐 Mon-Sun: 24/7 Support</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NexaLink Telecom. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+    <script>
+        // Reset form function for "Send Another Message" button
+        function resetForm() {
+            document.getElementById('formWrapper').style.display = 'block';
+            document.getElementById('formSuccess').classList.remove('visible');
+        }
+    </script>
+</body>
+
+</html>
